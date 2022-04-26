@@ -34,7 +34,7 @@ export default function Login(props){
             
             for(let i=0;i<savedDetails.length;i++)
             {
-                var eachUserDetails=savedDetails[i];
+                const eachUserDetails=savedDetails[i];
                 if(user.email===eachUserDetails.email && user.password===eachUserDetails.password){
                     
                     setLoggedInUserDetails(prev => ({...prev}=eachUserDetails) )
@@ -49,8 +49,6 @@ export default function Login(props){
             }
             alert("user details not correct , if not signed up please signup")
         }
-        
-        
     }
  
     if(isUserPresent){
