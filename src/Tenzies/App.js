@@ -17,7 +17,6 @@ export default function App(props){
         const allValues=dieNum.every(die=>die.value===firstValue)
         if(allHeld && allValues){
             setTenzies(true)
-            console.log("you won")
         }
     },[dieNum])
 
@@ -26,18 +25,8 @@ export default function App(props){
         for (let i = 0; i < 10; i++) {
             newDice.push(generateNewDie())
         }
-        console.log(newDice)
         return newDice
     }
-
-    // const allNewDice=()=>{
-    //     const newDice = []
-    //     for (let i = 0; i < 10; i++) {
-    //         newDice.push(generateNewDie())
-    //     }
-    //     console.log(newDice)
-    //     return newDice
-    // }
 
     function generateNewDie(){
        return {

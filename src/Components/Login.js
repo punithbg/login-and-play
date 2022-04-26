@@ -37,9 +37,7 @@ export default function Login(props){
                 var eachUserDetails=savedDetails[i];
                 if(user.email===eachUserDetails.email && user.password===eachUserDetails.password){
                     
-                    setLoggedInUserDetails(prev =>{
-                        return {...prev}=eachUserDetails
-                    })
+                    setLoggedInUserDetails(prev => ({...prev}=eachUserDetails) )
                     setIsUserPresent(true)
                     setIsUserLoggedIn(true)
                     setUser({
