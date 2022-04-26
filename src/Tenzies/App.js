@@ -1,7 +1,7 @@
 import React from "react"
 import Die from "./Die"
 import { v4 as uuid } from 'uuid';
-// import Confetti from "react-confetti"
+import Confetti from "react-confetti"
 import "../Styles/style.css"
 import { Redirect } from "react-router-dom";
 
@@ -79,7 +79,7 @@ export default function App(props){
     return(
         <main>
             
-            {/* {tenzies && <Confetti />} */}
+            {tenzies && <Confetti />}
             <h1>Welcome back {loggedInUserDetails.firstName}!!!</h1>
             <div className="container">
               {diceNumElements}

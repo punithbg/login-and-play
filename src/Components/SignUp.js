@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 as uid } from 'uuid';
-import Login from "./Login";
+
 import {Redirect } from "react-router"
 export default function SignUP(){
 

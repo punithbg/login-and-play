@@ -1,5 +1,5 @@
 import React from "react";
-import Display from "./Display";
+
 import {Redirect } from "react-router"
 
 export default function Login(props){
